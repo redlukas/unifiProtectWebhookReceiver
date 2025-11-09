@@ -1,4 +1,3 @@
-from pprint import pprint
 
 from fastapi import FastAPI
 

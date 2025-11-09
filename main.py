@@ -1,4 +1,3 @@
-
 from fastapi import FastAPI
 
 from model.unifialert import UnifiAlert

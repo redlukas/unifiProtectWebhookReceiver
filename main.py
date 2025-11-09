@@ -9,5 +9,4 @@ app = FastAPI()
 
 @app.post("/webhook")
 async def create_alert(alert: UnifiAlert):
-    pprint(alert)
     return alert

@@ -2,7 +2,7 @@ import json
 import re
 from pathlib import Path
 
-TESTDATA_DIR = Path(__file__).parent / "testdata"
+TESTDATA_DIR = Path(__file__).parent
 
 
 def collect_files():

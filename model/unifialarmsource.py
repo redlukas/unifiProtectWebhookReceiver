@@ -38,6 +38,7 @@ class KeyEnum(str, Enum):
     license_plate_of_interest = "license_plate_of_interest"
     include = "include"
     motion = "motion"
+    device_issue = "device_issue"
 
 
 class UnifiAlarmSource(BaseModel):

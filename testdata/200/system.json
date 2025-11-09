@@ -1,0 +1,79 @@
+{
+  "alarm": {
+    "conditions": [
+      {
+        "condition": {
+          "source": "device_issue",
+          "type": "is"
+        }
+      },
+      {
+        "condition": {
+          "source": "device_adoption_state_changed",
+          "type": "is"
+        }
+      },
+      {
+        "condition": {
+          "source": "device_discovery",
+          "type": "is"
+        }
+      },
+      {
+        "condition": {
+          "source": "admin_access",
+          "type": "is"
+        }
+      },
+      {
+        "condition": {
+          "source": "admin_recording_clips_manipulations",
+          "type": "is"
+        }
+      },
+      {
+        "condition": {
+          "source": "admin_settings_change",
+          "type": "is"
+        }
+      },
+      {
+        "condition": {
+          "source": "device_update_status_change",
+          "type": "is"
+        }
+      },
+      {
+        "condition": {
+          "source": "camera_utilization_limit",
+          "type": "is"
+        }
+      },
+      {
+        "condition": {
+          "source": "application_issue",
+          "type": "is"
+        }
+      },
+      {
+        "condition": {
+          "source": "schedule",
+          "type": "is",
+          "value": "*/10 * * * *"
+        }
+      }
+    ],
+    "name": "system to dumper",
+    "sources": [],
+    "triggers": [
+      {
+        "device": "schedule",
+        "eventId": "scheduleEventId",
+        "key": "schedule",
+        "timestamp": 1762608600150,
+        "value": "*/10 * * * *"
+      }
+    ]
+  },
+  "timestamp": 1762608600204
+}

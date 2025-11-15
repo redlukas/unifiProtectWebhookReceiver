@@ -27,7 +27,9 @@ def collect_cases():
     return cases
 
 
-@pytest.mark.parametrize("json_path,expected_status", collect_cases())
+@pytest.mark.parametrize(
+    "json_path,expected_status", collect_cases(), ids=lambda c: str(c[0].name)
+)
 def test_webhook_status(json_path: Path, expected_status: int):
     payload = json.loads(json_path.read_text(encoding="utf-8"))
     with httpx.Client(base_url=BASE_URL, timeout=10.0) as client:

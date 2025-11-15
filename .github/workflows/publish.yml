@@ -100,7 +100,6 @@ jobs:
         run: |
           mkdir -p test-results
           # Standard pytest run, plus JUnit XML for the pipeline
-          cd tests
           uv run pytest tests/webhooks.py --maxfail=1 --disable-warnings --junitxml=test-results/junit.xml
 
 

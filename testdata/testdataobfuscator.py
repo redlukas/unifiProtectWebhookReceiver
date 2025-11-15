@@ -13,7 +13,7 @@ def collect_files():
         if not status_dir.is_dir():
             continue
         for jf in sorted(status_dir.glob("*.json")):
-            found_files.append(f"{TESTDATA_DIR}\\{status_dir.name}\\{jf.name}")
+            found_files.append(str(Path(TESTDATA_DIR) / status_dir.name / jf.name))
     return found_files
 
 

@@ -23,7 +23,7 @@ jobs:
       - name: Set up uv + Python
         uses: astral-sh/setup-uv@v3
         with:
-          python-version: "3.13"
+          version: "3.13"
 
       - name: Sync deps (incl. dev)
         run: uv sync --all-extras --dev
@@ -45,7 +45,7 @@ jobs:
       - name: Set up uv + Python
         uses: astral-sh/setup-uv@v3
         with:
-          python-version: "3.13"
+          version: "3.13"
 
       - name: Sync deps (incl. dev)
         run: uv sync --all-extras --dev
@@ -82,7 +82,7 @@ jobs:
       - name: Set up uv + Python
         uses: astral-sh/setup-uv@v3
         with:
-          python-version: "3.13"
+          version: "3.13"
 
       - name: Sync deps (incl. dev)
         run: uv sync --all-extras --dev
@@ -146,7 +146,7 @@ jobs:
       - name: Set up uv + Python
         uses: astral-sh/setup-uv@v3
         with:
-          python-version: "3.13"
+          version: "3.13"
 
       - name: Build sdist and wheel
         run: uv build

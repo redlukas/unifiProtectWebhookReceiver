@@ -1,0 +1,71 @@
+{
+  "alarm": {
+    "name": "system to dumper",
+    "sources": [],
+    "conditions": [
+      {
+        "condition": {
+          "type": "is",
+          "source": "device_issue"
+        }
+      },
+      {
+        "condition": {
+          "type": "is",
+          "source": "device_adoption_state_changed"
+        }
+      },
+      {
+        "condition": {
+          "type": "is",
+          "source": "device_discovery"
+        }
+      },
+      {
+        "condition": {
+          "type": "is",
+          "source": "admin_access"
+        }
+      },
+      {
+        "condition": {
+          "type": "is",
+          "source": "admin_recording_clips_manipulations"
+        }
+      },
+      {
+        "condition": {
+          "type": "is",
+          "source": "admin_settings_change"
+        }
+      },
+      {
+        "condition": {
+          "type": "is",
+          "source": "device_update_status_change"
+        }
+      },
+      {
+        "condition": {
+          "type": "is",
+          "source": "camera_utilization_limit"
+        }
+      },
+      {
+        "condition": {
+          "type": "is",
+          "source": "application_issue"
+        }
+      }
+    ],
+    "triggers": [
+      {
+        "key": "device_adoption_state_changed",
+        "device": "nvr",
+        "eventId": "691f0ec000a6c503e41a1625",
+        "timestamp": "1763643072167"
+      }
+    ]
+  },
+  "timestamp": "1763643072176"
+}
